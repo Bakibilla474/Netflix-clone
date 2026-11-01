@@ -1,59 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="main">
-        <header>
-            <nav class="navbar">
-                <span class="logo"><img src="Asset/image/logo.svg"></span>
-                <div class="btn">
-                    <button class="btn1">English</button>
-                    <button class="btn2">Sign In</button>
-                </div>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive streaming-service landing page concept." />
+    <title>Streaming Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <header class="navbar">
+          <a class="logo" href="#" aria-label="Home">
+            <img src="Asset/image/logo.svg" alt="" />
+          </a>
+          <nav class="header-actions" aria-label="Account">
+            <button class="language-button" type="button">English</button>
+            <button class="sign-in-button" type="button">Sign in</button>
+          </nav>
         </header>
-        <div class="p1"><b>
+        <div class="hero-content">
+          <h1 id="hero-title">Unlimited movies, TV shows and more</h1>
+          <p class="hero-subtitle">Watch anywhere. Cancel anytime.</p>
+          <p class="hero-prompt">Ready to watch? Enter your email to create or restart your membership.</p>
+          <div class="signup-controls">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input id="email" type="email" autocomplete="email" placeholder="Email address" />
+            <button type="button">Get started</button>
+          </div>
+        </div>
+      </section>
 
-                Unlimited movies, TV shows and more
-            </b>
-        </div>
-        <div class="p2">
-            Watch anywhere. Cancel anytime.
-        </div>
-        <div class="p3">
-            Ready to watch? Enter your email to create or restart your membership.
-        </div>
-        <div class="inputType">
-            <from>
-                <input type="email" placeholder="Email address" id="mail">
-                <button id="bt">Get started</button>
-            </from>
-        </div>
-    </div>
-    <div class="break1">
-    </div>
-    <div class="second">
-        <div class="image1">
-            <img src="Asset/image/image 3.png">
-            <video src="Asset/video/video2.m4v" autoplay playsinline muted loop class="video1"></video>
-        </div>
-        <div>
-            <p class="p4">Enjoy on your TV </p>
-            <p class="p5"> Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more</p>
-    </div>
-</div>
-<div class="break2">
-</div>
-<div class="third">
+      <div class="section-divider" aria-hidden="true"></div>
 
-</div>
-</body>
-
+      <section class="feature" aria-labelledby="feature-title">
+        <div class="feature-copy">
+          <h2 id="feature-title">Enjoy on your TV</h2>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="feature-media">
+          <img src="Asset/image/image 3.png" alt="Television screen" />
+          <video
+            src="Asset/video/video2.m4v"
+            class="feature-video"
+            autoplay
+            playsinline
+            muted
+            loop
+            aria-hidden="true"
+          ></video>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
